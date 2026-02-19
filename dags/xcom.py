@@ -3,7 +3,7 @@ import random
 from datetime import datetime, timedelta
 
 from airflow import DAG, AirflowException
-from airflow.operators.python_operator import PythonOperator
+from airflow.operators.python import PythonOperator
 
 
 def generate_random_number(ti):

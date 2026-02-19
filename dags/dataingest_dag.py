@@ -57,8 +57,8 @@ with dag:
         is_delete_operator_pod=True,
         in_cluster=in_cluster,
         env_vars={
-            "AWS_ACCESS_KEY_ID": Variable.get("AWS_ACCESS_KEY_ID"),
-            "AWS_SECRET_ACCESS_KEY": Variable.get("AWS_SECRET_ACCESS_KEY"),
+            # "AWS_ACCESS_KEY_ID": Variable.get("AWS_ACCESS_KEY_ID"),
+            # "AWS_SECRET_ACCESS_KEY": Variable.get("AWS_SECRET_ACCESS_KEY"),
             "APP_ENV": "development", # Example of another non-secret env var
             "LOG_LEVEL": "INFO"
         },

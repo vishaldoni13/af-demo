@@ -21,7 +21,7 @@ sqlite_conn.close()
 
 # Output DataFrame to CSV
 output_csv_file = f'/tmp/output_{timestamp_str}.csv'
-s3_path = f's3://kethan-gp-artifact/airflow_data/output_{timestamp_str}.csv'
-df.to_csv(s3_path, index=False)
+#s3_path = f's3://kethan-gp-artifact/airflow_data/output_{timestamp_str}.csv'
+#df.to_csv(s3_path, index=False)
 df.to_csv(output_csv_file, index=False)
 
